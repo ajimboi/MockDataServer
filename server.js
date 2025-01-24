@@ -2,7 +2,6 @@ const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Sample data to be served
 const careerInformation = {
   careerObjective: "test",
   extended: {},
@@ -289,7 +288,6 @@ app.get("v1/profile/languages", (req, res) => {
   res.json(language);
 });
 
-// Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
